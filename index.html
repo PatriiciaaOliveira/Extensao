@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Food Donation</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Food Donation System</h1>
+    
+    <div class="form-group">
+      <h2>Register Donation</h2>
+      <input type="text" id="donor-name" placeholder="Donor Name">
+      <input type="email" id="donor-email" placeholder="Donor Email">
+      <input type="text" id="food-description" placeholder="Food Description">
+      <input type="number" id="food-quantity" placeholder="Quantity">
+      <input type="date" id="expiry-date" placeholder="Expiry Date">
+      <button onclick="registerDonation()">Register Donation</button>
+    </div>
+    
+    <div class="list-group">
+      <h2>Available Donations</h2>
+      <ul id="donation-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
