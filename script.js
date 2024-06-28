@@ -31,7 +31,7 @@ function registerDonation() {
     document.getElementById('food-quantity').value = '';
     document.getElementById('expiry-date').value = '';
   } else {
-    alert('Please fill in all fields.');
+    alert('Por favor, preencha todos os campos.');
   }
 }
 
@@ -47,7 +47,7 @@ function addDonationToList(donation) {
   li.setAttribute('data-id', donation.id);
   li.innerHTML = `
     <span>${donation.donorName} - ${donation.foodDescription} (${donation.foodQuantity}) - ${new Date(donation.expiryDate).toLocaleDateString()}</span>
-    <button class="remove-btn" onclick="removeDonation(${donation.id})">Remove</button>
+    <button class="remove-btn" onclick="removeDonation(${donation.id})">Remover</button>
   `;
   donationList.appendChild(li);
 }

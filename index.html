@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Food Donation</title>
+  <title>Sistema de Doações de Alimentos</title>
 </head>
 <body>
   <div class="container">
-    <h1>Food Donation System</h1>
+    <h1>Sistema de Doações de Alimentos</h1>
     
     <div class="form-group">
-      <h2>Register Donation</h2>
-      <input type="text" id="donor-name" placeholder="Donor Name">
-      <input type="email" id="donor-email" placeholder="Donor Email">
-      <input type="text" id="food-description" placeholder="Food Description">
-      <input type="number" id="food-quantity" placeholder="Quantity">
-      <input type="date" id="expiry-date" placeholder="Expiry Date">
-      <button onclick="registerDonation()">Register Donation</button>
+      <h2>Cadastrar Doação</h2>
+      <input type="text" id="donor-name" placeholder="Nome do Doador">
+      <input type="email" id="donor-email" placeholder="E-mail do Doador">
+      <input type="text" id="food-description" placeholder="Descrição do Alimento">
+      <input type="number" id="food-quantity" placeholder="Quantidade">
+      <input type="date" id="expiry-date" placeholder="Data de Validade">
+      <button onclick="registerDonation()">Registrar Doação</button>
     </div>
     
     <div class="list-group">
-      <h2>Available Donations</h2>
+      <h2>Doações Disponíveis</h2>
       <ul id="donation-list"></ul>
     </div>
   </div>
